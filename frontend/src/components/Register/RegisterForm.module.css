@@ -1,0 +1,122 @@
+/* Applique box-sizing pour inclure la bordure et le padding dans la taille totale de l'élément */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.register-container {
+  background-color: #f8f8f8;
+  box-shadow: 2px 3px 5px 2px #2626261e;
+  padding: 50px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto 0 auto;
+}
+
+.register-container h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.register-container p {
+  font-size: 16px;
+  color: #262626;
+  margin-bottom: 25px;
+}
+
+.form-line input {
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: solid grey 1.5px;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.password-line {
+  margin-top: 30px;
+}
+
+.check-line {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.check-line input {
+  margin-right: 8px;
+}
+
+.check-line label {
+  font-size: 14px;
+}
+
+.btn-submit {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #73614c;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: #5f4f3e;
+}
+
+.redirect-btn {
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  color: #73614c;
+  border: 1px solid #73614c;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.redirect-btn:hover {
+  background-color: #73614c;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    padding: 20px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .form-line input {
+    font-size: 16px;
+  }
+
+  .btn-submit {
+    font-size: 14px;
+  }
+
+  .redirect-btn {
+    font-size: 14px;
+  }
+
+  .check-line {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .form-line input {
+    font-size: 14px;
+  }
+}

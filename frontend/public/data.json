@@ -1,0 +1,149 @@
+{
+    "instruments": [
+    {"id_instrument": "1", "name_instrument": "guitare"},
+    {"id_instrument": "2", "name_instrument": "piano"},
+    {"id_instrument": "3", "name_instrument": "violon"},
+    {"id_instrument": "4", "name_instrument": "batterie"},
+    {"id_instrument": "5", "name_instrument": "saxophone"},
+    {"id_instrument": "6", "name_instrument": "trompette"},
+    {"id_instrument": "7", "name_instrument": "triangle"},
+    {"id_instrument": "8", "name_instrument": "clarinette"},
+    {"id_instrument": "9", "name_instrument": "violoncelle"},
+    {"id_instrument": "10", "name_instrument": "harpe"},
+    {"id_instrument": "11", "name_instrument": "accordéon"},
+    {"id_instrument": "12", "name_instrument": "contrebasse"},
+    {"id_instrument": "13", "name_instrument": "xylophone"},
+    {"id_instrument": "14", "name_instrument": "trombone"},
+    {"id_instrument": "15", "name_instrument": "banjoline"}
+    ],
+    "levels": [
+        {"id_level": "1", "label_level": "débutant"},
+        {"id_level": "1", "label_level": "pratique occasionnelle"},
+        {"id_level": "1", "label_level": "intermédiaire"},
+        {"id_level": "1", "label_level": "avancé"},
+        {"id_level": "1", "label_level": "expert"}
+    ],
+    "users": [
+        {"id_user": "1", "name_user": "Robert", "first_name_user": "Bob", "alias_user": "L'âne", "birth_date_user": "1974", "email_user": "bob.dit.lane@wanadoo.fr", "password_user": "1234biere", "postal_code_user": "88230", "location_user": "Xonrardmer", "description_user": "Je joue du triangle le vendredi soir au bistrot avec les copains, j'ai le rythme dans la peau. J'aimerais pratiquer avec d'autres gens."},
+        {"id_user": "2", "name_user": "Dupont", "first_name_user": "Marie", "alias_user": "Mélodie", "birth_date_user": "1988", "email_user": "marie.melodie@gmail.com", "password_user": "piano2023", "postal_code_user": "75011", "location_user": "Paris", "description_user": "Pianiste passionnée cherchant à former un groupe de jazz."},
+        {"id_user": "3", "name_user": "Martin", "first_name_user": "Luc", "alias_user": "Rockstar", "birth_date_user": "1995", "email_user": "luc.rockstar@hotmail.com", "password_user": "guitar123", "postal_code_user": "69001", "location_user": "Lyon", "description_user": "Guitariste débutant cherchant des personnes pour jouer du rock."},
+        {"id_user": "4", "name_user": "Leroy", "first_name_user": "Sophie", "alias_user": "Sax Girl", "birth_date_user": "1982", "email_user": "sophie.sax@yahoo.fr", "password_user": "saxo4ever", "postal_code_user": "33000", "location_user": "Bordeaux", "description_user": "Saxophoniste de niveau intermédiaire, intéressée par le jazz et le funk."},
+        {"id_user": "5", "name_user": "Petit", "first_name_user": "Thomas", "alias_user": "Drum Master", "birth_date_user": "1990", "email_user": "thomas.drums@gmail.com", "password_user": "batterie90", "postal_code_user": "59000", "location_user": "Lille", "description_user": "Batteur expérimenté cherchant à intégrer un groupe de metal."},
+        {"id_user": "6", "name_user": "Dubois", "first_name_user": "Claire", "alias_user": "Violoniste", "birth_date_user": "1985", "email_user": "claire.violon@orange.fr", "password_user": "violon85", "postal_code_user": "31000", "location_user": "Toulouse", "description_user": "Violoniste classique ouverte à d'autres styles musicaux."},
+        {"id_user": "7", "name_user": "Moreau", "first_name_user": "Pierre", "alias_user": "Trompettiste", "birth_date_user": "2002", "email_user": "pierre.trompette@gmail.com", "password_user": "trumpet78", "postal_code_user": "44000", "location_user": "Nantes", "description_user": "Trompettiste de jazz cherchant à former un big band."},
+        {"id_user": "8", "name_user": "Lefebvre", "first_name_user": "Julie", "alias_user": "Accordéoniste", "birth_date_user": "1992", "email_user": "julie.accordeon@yahoo.com", "password_user": "accordion92", "postal_code_user": "67000", "location_user": "Strasbourg", "description_user": "Accordéoniste passionnée de musique traditionnelle."},
+        {"id_user": "9", "name_user": "Garcia", "first_name_user": "Antoine", "alias_user": "Contrebassiste", "birth_date_user": "1987", "email_user": "antoine.contrebasse@hotmail.fr", "password_user": "bass1987", "postal_code_user": "13001", "location_user": "Marseille", "description_user": "Contrebassiste de jazz cherchant des musiciens pour des jam sessions."},
+        {"id_user": "10", "name_user": "Roux", "first_name_user": "Émilie", "alias_user": "Harpiste", "birth_date_user": "1983", "email_user": "emilie.harpe@gmail.com", "password_user": "harpe2023", "postal_code_user": "35000", "location_user": "Rennes", "description_user": "Harpiste classique intéressée par la musique celtique."},
+        {"id_user": "11", "name_user": "Fournier", "first_name_user": "Nicolas", "alias_user": "Clarinettiste", "birth_date_user": "1980", "email_user": "nicolas.clarinette@orange.fr", "password_user": "clarinet80", "postal_code_user": "21000", "location_user": "Dijon", "description_user": "Clarinettiste amateur cherchant à jouer dans un orchestre."},
+        {"id_user": "12", "name_user": "Girard", "first_name_user": "Céline", "alias_user": "Xylophone", "birth_date_user": "1993", "email_user": "celine.xylo@gmail.com", "password_user": "xylo1993", "postal_code_user": "54000", "location_user": "Nancy", "description_user": "Percussionniste spécialisée en xylophone, ouverte à tous styles."},
+        {"id_user": "13", "name_user": "Morel", "first_name_user": "Julien", "alias_user": "Trombone", "birth_date_user": "2005", "email_user": "julien.trombone@yahoo.fr", "password_user": "trombone89", "postal_code_user": "76000", "location_user": "Rouen", "description_user": "Tromboniste cherchant à intégrer un orchestre symphonique."},
+        {"id_user": "14", "name_user": "Lambert", "first_name_user": "Aurélie", "alias_user": "Banjo", "birth_date_user": "1991", "email_user": "aurelie.banjo@hotmail.com", "password_user": "banjo2023", "postal_code_user": "38000", "location_user": "Grenoble", "description_user": "Joueuse de banjo passionnée de bluegrass et de country."},
+        {"id_user": "15", "name_user": "Faure", "first_name_user": "Maxime", "alias_user": "Violoncelliste", "birth_date_user": "1986", "email_user": "maxime.violoncelle@gmail.com", "password_user": "cello1986", "postal_code_user": "34000", "location_user": "Montpellier", "description_user": "Violoncelliste professionnel cherchant à former un quatuor à cordes."},
+        {"id_user": "16", "name_user": "Mercier", "first_name_user": "Camille", "alias_user": "Flûtiste", "birth_date_user": "1994", "email_user": "camille.flute@orange.fr", "password_user": "flute2023", "postal_code_user": "49000", "location_user": "Angers", "description_user": "Flûtiste traversière cherchant à explorer la musique contemporaine."}
+    ],
+    "musical_genres": [
+        {"id_genre": "1", "name_genre":"Rock"},
+        {"id_genre": "1", "name_genre":"Pop"},
+        {"id_genre": "1", "name_genre":"Electro"},
+        {"id_genre": "1", "name_genre":"Classique"},
+        {"id_genre": "1", "name_genre":"Metal"},
+        {"id_genre": "1", "name_genre":"Jazz"},
+        {"id_genre": "1", "name_genre":"Folk"},
+        {"id_genre": "1", "name_genre":"Reggae"},
+        {"id_genre": "1", "name_genre":"Rap"},
+        {"id_genre": "1", "name_genre":"Blues"}
+    ],
+    "administrators": [
+        {"id_admin":"1", "name_admin":"Irina", "email_admin":"irina@mail.fr", "password_admin":"azerty"},
+        {"id_admin":"2", "name_admin":"Aldrit", "email_admin":"aldrit@mail.fr", "password_admin":"azerty"},
+        {"id_admin":"3", "name_admin":"Imrane", "email_admin":"imrane@mail.fr", "password_admin":"azerty"},
+        {"id_admin":"4", "name_admin":"Youri", "email_admin":"youri@mail.fr", "password_admin":"azerty"},
+        {"id_admin":"5", "name_admin":"Alex", "email_admin":"alex@mail.fr", "password_admin":"azerty"}
+    ],
+    "conversations": [
+        {"id_conversation": "1", "conversation_subject": "Formation d'un groupe de jazz", "id_author": "1", "id_writer": "2", "author_type": "user"}
+    ], 
+    "messages": [
+        {
+            "id_message": "1",
+            "text_message": "Bonjour Mélodie, je suis Bob. J'ai vu que tu cherchais à former un groupe de jazz. Je joue du triangle et j'aimerais participer.",
+            "date_sent": "2025-01-07T15:00:00Z",
+            "is_read": true,
+            "id_message_parent": null,
+            "id_writer": "1",
+            "writer_type": "user",
+            "id_conversation": "1"
+          },
+          {
+            "id_message": "2",
+            "text_message": "Bonjour Bob ! Merci pour ton message. C'est super, un triangle peut vraiment apporter une touche originale. As-tu déjà joué dans des groupes de jazz avant ?",
+            "date_sent": "2025-01-07T15:10:00Z",
+            "is_read": true,
+            "id_message_parent": "1",
+            "id_writer": "2",
+            "writer_type": "user",
+            "id_conversation": "1"
+          },
+          {
+            "id_message": "3",
+            "text_message": "Pas encore, mais je joue régulièrement avec des amis dans des bars. J'aimerais vraiment m'essayer au jazz avec d'autres musiciens passionnés.",
+            "date_sent": "2025-01-07T15:20:00Z",
+            "is_read": true,
+            "id_message_parent": "2",
+            "id_writer": "1",
+            "writer_type": "user",
+            "id_conversation": "1"
+          },
+          {
+            "id_message": "4",
+            "text_message": "Parfait, on pourrait organiser une première répétition à Paris. Je vais voir si d'autres musiciens sont intéressés.",
+            "date_sent": "2025-01-07T15:30:00Z",
+            "is_read": false,
+            "id_message_parent": null,
+            "id_writer": null,
+            "writer_type":"user",
+            "id_conversation": "1"
+          }
+    ],
+    "reports": [
+        {"id_report": "1", "type_report": "NSFW", "description_report": "La photo du Drum Master n'est vraiment pas appropriée", "is_processed": false, "id_target_user": "5", "id_source_user": "3"}
+    ],
+    "prefer": [
+        {"id_user": "1", "id_genre": "1"},  
+        {"id_user": "2", "id_genre": "6"},  
+        {"id_user": "3", "id_genre": "1"},  
+        {"id_user": "4", "id_genre": "6"}, 
+        {"id_user": "4", "id_genre": "2"},  
+        {"id_user": "5", "id_genre": "5"},  
+        {"id_user": "6", "id_genre": "4"},  
+        {"id_user": "7", "id_genre": "6"},  
+        {"id_user": "8", "id_genre": "7"},  
+        {"id_user": "9", "id_genre": "6"}, 
+        {"id_user": "10", "id_genre": "4"}, 
+        {"id_user": "10", "id_genre": "7"}, 
+        {"id_user": "11", "id_genre": "4"}, 
+        {"id_user": "12", "id_genre": "2"},
+        {"id_user": "13", "id_genre": "4"},
+        {"id_user": "14", "id_genre": "7"},
+        {"id_user": "15", "id_genre": "4"}, 
+        {"id_user": "16", "id_genre": "3"}
+    ],
+    "play": [
+        {"id_user": "1", "id_level": "2", "id_instrument": "7"}, 
+        {"id_user": "2", "id_level": "4", "id_instrument": "2"},  
+        {"id_user": "3", "id_level": "1", "id_instrument": "1"},  
+        {"id_user": "4", "id_level": "3", "id_instrument": "5"},  
+        {"id_user": "5", "id_level": "4", "id_instrument": "4"},  
+        {"id_user": "6", "id_level": "4", "id_instrument": "3"},  
+        {"id_user": "7", "id_level": "3", "id_instrument": "6"},  
+        {"id_user": "8", "id_level": "4", "id_instrument": "11"},
+        {"id_user": "9", "id_level": "4", "id_instrument": "12"}, 
+        {"id_user": "10", "id_level": "4", "id_instrument": "10"},
+        {"id_user": "11", "id_level": "2", "id_instrument": "8"},
+        {"id_user": "12", "id_level": "4", "id_instrument": "13"}, 
+        {"id_user": "13", "id_level": "3", "id_instrument": "14"}, 
+        {"id_user": "14", "id_level": "4", "id_instrument": "15"},
+        {"id_user": "15", "id_level": "5", "id_instrument": "9"}, 
+        {"id_user": "16", "id_level": "4", "id_instrument": "8"}  
+    ]
+    }

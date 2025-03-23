@@ -1,0 +1,15 @@
+.GenreCard {
+  display: flex;
+  max-width: 70%;
+  justify-content: flex-start;
+}
+
+.Genre p {
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  margin-right: 0.6em;
+  width: 6rem;
+  background-color: #73614c;
+  border: solid 0.02em #262626;
+  border-radius: 0.9em;
+  color: #f2f2f2;
+}

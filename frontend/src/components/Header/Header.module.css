@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    background: linear-gradient(.25turn, #fff3e1 25%, #D99748);
+}
+
+.app-logo {
+    width: 240px;
+    height: 80px;
+}
+

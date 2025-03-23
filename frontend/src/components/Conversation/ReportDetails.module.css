@@ -1,0 +1,41 @@
+.reportDetails {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .reportDetails h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .reportDetails p {
+    margin-bottom: 8px;
+  }
+  
+  .reportDetails strong {
+    font-weight: bold;
+  }
+  
+  .statusContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .resolveButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .resolveButton:hover {
+    background-color: #45a049;
+  }
+  

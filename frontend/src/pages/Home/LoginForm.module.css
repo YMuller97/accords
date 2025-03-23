@@ -1,0 +1,149 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  margin: 0 auto;
+  max-width: 20rem;
+  min-width: 13rem;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 2px 2px #2626261e;
+  background-color: #f8f8f8;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.pass-link {
+  text-decoration: underline;
+  color: #73614c;
+  margin: 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-submit {
+  width: 100%;
+  max-width: 13rem;
+  padding: 0.4rem;
+  margin-top: 1rem;
+  border: 1px solid gray;
+  border-radius: 0.3rem;
+  background-color: #d99748;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #c6863d;
+}
+
+.login-container a {
+  text-decoration: none;
+}
+
+.login-container hr {
+  width: 50%;
+  max-width: 100px;
+  color: #5f4f3e;
+  border: 0;
+  border-top: 1px solid #5f4f3e;
+  margin: 1rem auto;
+}
+
+.btn-connect {
+  width: 70%;
+  max-width: 9rem;
+  padding: 0.4rem;
+  border: 1px solid gray;
+  border-radius: 0.3rem;
+  background-color: #73614c;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-connect:hover {
+  background-color: #5f4f3e;
+}
+
+.error {
+  border-color: red !important;
+}
+
+.errorMessage {
+  font-size: 0.75rem;
+  color: red;
+  margin-top: 0.25rem;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.input-line {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.input-line.error {
+  border-color: red;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1rem;
+    max-width: 18rem;
+  }
+
+  .pass-link {
+    margin: 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .btn-submit,
+  .btn-connect {
+    padding: 0.35rem;
+    font-size: 0.875rem;
+  }
+
+  .login-container hr {
+    width: 80%;
+  }
+
+  .errorMessage {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-container {
+    max-width: 24rem;
+    padding: 2rem;
+  }
+
+  .btn-submit {
+    max-width: 15rem;
+  }
+
+  .btn-connect {
+    max-width: 10rem;
+  }
+
+  .pass-link {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login-container {
+    max-width: 28rem;
+  }
+}

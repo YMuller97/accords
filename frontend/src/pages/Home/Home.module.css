@@ -1,0 +1,25 @@
+.homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .homepage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homepage {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,174 @@
+.grid {
+  min-width: 1000px;
+  padding: 2rem;
+  margin-top: 2rem;
+  grid-area: cn;
+  height: 80vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.container.idCard {
+  max-width: 80%;
+  height: auto;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 1.8em;
+  box-shadow: 3px 3px 5px 2px #2626261e;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.profilImage {
+  display: inline;
+  text-align: left;
+  flex: 1;
+  min-width: 100px;
+}
+
+.box {
+  border-radius: 1.5em;
+  box-shadow: 3px 3px 5px 2px #2626261e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+.profilInformations {
+  display: inline;
+  text-align: left;
+  flex: 2;
+  min-width: 200px;
+}
+
+.profilInformations h1,
+.profilInformations h2,
+.profilInformations p {
+  margin: auto;
+  padding: 0.2rem;
+  color: #262626;
+}
+
+.profilInformations h1 {
+  color: #d99748;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.profilInformations h2 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.profilInformations p {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.description {
+  text-align: left;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.others {
+  color: #262626;
+  width: 100%;
+}
+
+.left {
+  padding-right: 1em;
+}
+
+.genres {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .genres {
+    flex-direction: row;
+  }
+}
+
+.pencil {
+  background: none;
+  color: inherit;
+  border: none;
+  color: #73614c;
+  font-size: 3em;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    min-width: 100%;
+    height: auto;
+  }
+
+  .containerLeft,
+  .containerRight {
+    width: 100%;
+  }
+
+  .container.idCard {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .profilImage,
+  .profilInformations {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+
+  .box {
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .genres {
+    flex-direction: column;
+  }
+
+  .pencil {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .profilInformations h1 {
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  }
+
+  .profilInformations h2 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+  }
+
+  .profilInformations p {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+  }
+
+  .description {
+    padding: 0.5rem 0;
+  }
+
+  .others {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,31 @@
+.politique-cookies {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .politique-cookies h1 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+  }
+  
+  .politique-cookies h2 {
+    color: #444;
+    margin-top: 30px;
+  }
+  
+  .politique-cookies p, .politique-cookies ul {
+    color: #666;
+  }
+  
+  .politique-cookies ul {
+    padding-left: 20px;
+  }
+  
+  .politique-cookies li {
+    margin-bottom: 5px;
+  }
+  

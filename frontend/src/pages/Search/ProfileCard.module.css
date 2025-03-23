@@ -1,0 +1,98 @@
+.profile-card {
+  position: relative;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 2px 2px darkgrey;
+  background-color: #f8f8f8;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 40%;
+  max-height: 15rem;
+  min-width: 480px;
+}
+
+.card-picture {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card-picture img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header p {
+  text-align: start;
+}
+
+.card-user-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #73614c;
+  margin: 0;
+}
+
+.card-user-location {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #73614c;
+}
+
+.fav-check {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  margin-left: 1rem;
+}
+
+.user-music-genres,
+.user-instruments {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 0.2rem;
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.card-user-name {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    width: 90%;
+    min-width: 0;
+    max-height: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-picture img {
+    width: 100%;
+    height: auto;
+    max-width: 10rem;
+  }
+}

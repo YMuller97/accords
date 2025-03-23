@@ -1,0 +1,35 @@
+.cgu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .cgu-container h1 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+  }
+  
+  .cgu-container h2 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .cgu-container p {
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .cgu-container ul {
+    padding-left: 20px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .cgu-container li {
+    margin-bottom: 5px;
+  }
+  

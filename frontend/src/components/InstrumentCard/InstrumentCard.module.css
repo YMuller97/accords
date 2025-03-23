@@ -1,0 +1,24 @@
+.instrumentCard {
+    display: flex;
+    max-width: 70%;
+    justify-content: flex-start;
+}
+
+.instrument p {
+    padding: 0.3em 0.3em 0.3em 0.3em; 
+    width: 10rem;
+    background-color: #D99748;
+    border: solid 0.02em #73614c;
+    border-radius: 0.8em;
+    color: #262626;  
+
+}
+
+.level p {
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    margin-left: 1em;
+    width: 10rem;
+    color: #262626;
+    text-align: left;
+}
+

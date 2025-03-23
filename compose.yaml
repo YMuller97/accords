@@ -1,0 +1,68 @@
+services:
+
+  accords_node_container:
+    container_name: ${SERVER_HOST}
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file: .env
+    ports: 
+      - ${SERVER_PORT}:3001
+    networks: 
+      - node-network
+    volumes:
+      - ./backend:/backend
+      - v_accords_node_modules:/backend/node_modules
+    depends_on: 
+      accords_db_container:
+        condition: service_healthy
+
+   
+  accords_react_container:
+    container_name: ${FRONT_HOST}
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    env_file: .env
+    ports: 
+      - ${FRONT_PORT}:3000
+    networks: 
+      - node-network
+    volumes:
+      - ./frontend:/frontend
+      - v_accords_node_modules:/frontend/node_modules
+    depends_on:
+      - accords_node_container
+
+  accords_db_container:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    container_name: ${POSTGRES_HOST}
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - v_accords_pg:/var/lib/postgresql/accords_data
+    networks: 
+      - node-network
+    ports: 
+      - ${POSTGRES_PORT}:5432
+    command: -p ${POSTGRES_PORT} 
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h accords_db_container -p ${POSTGRES_PORT} -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      start_period: 0s
+      interval: 5s
+      timeout: 5s
+      retries: 3
+  
+networks: 
+  node-network:
+    driver: bridge
+
+volumes:
+  v_accords_node_modules:
+    name: "v_accords_node_modules"
+  v_accords_pg:
+    name: "v_accords_pg"

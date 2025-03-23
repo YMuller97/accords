@@ -1,0 +1,35 @@
+.messageDisplay {
+    padding: 10px;
+    overflow-y: auto; /* Pour la barre de défilement si nécessaire */
+    height: 300px; /* Ajustez à votre besoin */
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 70%; /* Pour éviter que les messages ne prennent toute la largeur */
+    word-wrap: break-word; /* Pour que le texte long passe à la ligne */
+  }
+  
+  .sent {
+    background-color: #DCF8C6; /* Vert clair pour les messages envoyés */
+    align-self: flex-end; /* Aligner à droite dans un conteneur flex */
+    margin-left: auto; /* Pousse le message vers la droite */
+  }
+  
+  .received {
+    background-color: #E5E5EA; /* Gris clair pour les messages reçus */
+    align-self: flex-start; /* Aligner à gauche */
+    margin-right: auto; /* Pousse le message vers la gauche */
+  }
+  
+  .timestamp {
+    font-size: 0.7rem;
+    color: #777;
+    margin-bottom: 3px;
+  }
+  
+  .content {
+    margin: 0;
+  }

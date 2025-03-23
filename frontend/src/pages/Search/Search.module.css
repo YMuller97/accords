@@ -1,0 +1,58 @@
+.search-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fff3e1, #f2f2f2);
+    position: relative;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .search-page {
+      flex-direction: row;
+    }
+  }
+  
+  .search-page > div:first-child {
+    order: 1;
+    width: 100%;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .search-page > div:first-child {
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;
+      flex: 0 0 auto;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+  
+  .search-page > div:nth-child(2) {
+    order: 2;
+    width: 100%;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .search-page {
+      flex-direction: column; 
+    }
+    .search-page > div:first-child {
+      width: 100%; /* Force FilterList à prendre toute la largeur */
+      max-width: none; 
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .search-page > div:nth-child(2) {
+      width: 100%; /* Force ProfileList à prendre toute la largeur */
+    }
+  }

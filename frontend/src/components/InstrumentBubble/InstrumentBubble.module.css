@@ -1,0 +1,21 @@
+.instrumentCard {
+    display: flex;
+    max-width: 50%;
+    justify-content: flex-start;
+}
+
+.instrument p {
+    padding: 0.3em 0.3em 0.3em 0.3em; 
+    width: auto;
+    background-color: hsl(33, 66%, 57%, 90%);
+    border: solid 0.02em #73614c;
+    border-radius: 1.2em;
+    color: #262626;
+
+}
+
+.instrument p:hover {
+    background-color: hsl(33, 66%, 57%,60%);
+    box-shadow: 3px 3px 5px 2px hsla(0, 0%, 15%, 0.34);
+    transition: 0.4s;
+}
