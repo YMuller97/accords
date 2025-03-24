@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
 
   //Fetch all favorites from the database
   useEffect(() => {
-    fetch('api//favs/all')
+    fetch('api/favs/all')
     .then(response => response.json())
     .then(datas => {
         setFavsData(datas);
@@ -68,8 +68,8 @@ useEffect(() => {
 
   if (token && storedUserType) {
     const endpoint = storedUserType === 'admin' 
-      ? 'api//admin/me' 
-      : 'api//users/me';
+      ? 'api/admin/me' 
+      : 'api/users/me';
     
     const response = await fetch(endpoint, {
       headers: { 'Authorization': `Bearer ${token}` }
@@ -98,7 +98,7 @@ useEffect(() => {
     const loadData = async () => {
       try {
         const [usersRes, dataRes] = await Promise.all([
-          fetch("api//users"),
+          fetch("api/users"),
           fetch("/data.json")
         ]);
         

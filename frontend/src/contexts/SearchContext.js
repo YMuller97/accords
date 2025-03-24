@@ -31,7 +31,7 @@ export const SearchProvider = ({children}) => {
   
     // ------------------------------- Effects ------------------------------
     useEffect(() => {
-        fetch('api//users/all')
+        fetch('api/users/all')
         .then(response => response.json())
         .then(datas => {
             setUsersData(datas);
@@ -40,7 +40,7 @@ export const SearchProvider = ({children}) => {
     },[]);
 
     useEffect(() => {
-        fetch('api//instruments/')
+        fetch('api/instruments/')
         .then(response => response.json())
         .then(datas => {
             setInstruments(datas);
@@ -49,7 +49,7 @@ export const SearchProvider = ({children}) => {
     },[]);
 
     useEffect(() => {
-        fetch('api//genres/')
+        fetch('api/genres/')
         .then(response => response.json())
         .then(datas => {
             setGenres(datas);
@@ -58,7 +58,7 @@ export const SearchProvider = ({children}) => {
     },[]);
 
     useEffect(() => {
-        fetch('api//levels/')
+        fetch('api/levels/')
         .then(response => response.json())
         .then(datas => {
             setLevels(datas);
@@ -89,7 +89,7 @@ export const SearchProvider = ({children}) => {
     const addFav = async (userId, favId) => {
         try {
             // Send POST request to add favorite
-            const response = await fetch('api//users/'+ userId + '/favs/', {
+            const response = await fetch('api/users/'+ userId + '/favs/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -118,7 +118,7 @@ export const SearchProvider = ({children}) => {
 
     const deleteFav = async (userId, favId) => {
         //Send DELETE request to remove favorite
-        const response = await fetch('api//users/'+ userId + '/favs/' + favId, {
+        const response = await fetch('api/users/'+ userId + '/favs/' + favId, {
             method: 'DELETE'
         });
         if(response.ok){

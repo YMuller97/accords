@@ -31,10 +31,10 @@ const Conversation = () => {
       let endpoint = '';
       if (isAdmin && admin) {
         // Fetch admin conversations
-        endpoint = `api//conv/admin/${admin.dataValues.id_admin}`;
+        endpoint = `api/conv/admin/${admin.dataValues.id_admin}`;
       } else if (user) {
         // Fetch regular user conversations
-        endpoint = `api//conv/user/${user.dataValues.id_user}`;
+        endpoint = `api/conv/user/${user.dataValues.id_user}`;
       }
       const response = await fetch(
         endpoint,
@@ -63,7 +63,7 @@ const Conversation = () => {
       try {
         const token = localStorage.getItem("authToken");
         const response = await fetch(
-          `api//reports/unresolved`,
+          `api/reports/unresolved`,
           {
             method: "GET",
             headers: {
@@ -106,7 +106,7 @@ const Conversation = () => {
         return;
       }
       const response = await fetch(
-        `api//conv/${selectedConversation.id_conv}`,
+        `api/conv/${selectedConversation.id_conv}`,
         {
           method: "PUT",
           headers: {
@@ -145,7 +145,7 @@ const Conversation = () => {
         return;
       }
 
-      const response = await fetch('api//conv/admin', {
+      const response = await fetch('api/conv/admin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

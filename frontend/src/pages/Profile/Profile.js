@@ -20,7 +20,7 @@ const Profile = () => {
     // if (!userId) return; // Évite d'exécuter si userId est undefined
 
     fetch(
-      `api//users/${user.dataValues.id_user}/instruments`
+      `api/users/${user.dataValues.id_user}/instruments`
     )
       .then((response) => response.json())
       .then((instruments) => {
@@ -29,7 +29,7 @@ const Profile = () => {
       })
       .catch((error) => console.error("Erreur:", error));
 
-    fetch(`api//users/${user.dataValues.id_user}/genres`)
+    fetch(`api/users/${user.dataValues.id_user}/genres`)
       .then((response) => response.json())
       .then((genres) => {
         // console.log(genres);

@@ -49,7 +49,7 @@ const ProfileList = () => {
   // Fonction pour récupérer les coordonnées de tous les utilisateurs
   const fetchUserCoordinates = async () => {
     try {
-      const response = await fetch("api//users/coordinates");
+      const response = await fetch("api/users/coordinates");
       const data = await response.json();
 
       const coordinatesMap = {};
@@ -122,7 +122,7 @@ const ProfileList = () => {
   }, []);
 
   // useEffect(() => {
-  //   fetch('api//favs/all')
+  //   fetch('api/favs/all')
   //   .then(response => response.json())
   //   .then(datas => {
   //       setFavsData(datas);

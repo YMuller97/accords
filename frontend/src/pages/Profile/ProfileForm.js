@@ -49,7 +49,7 @@ const ProfileForm = () => {
     }
 
     try {
-      const response = await fetch("api//users/me/", {
+      const response = await fetch("api/users/me/", {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${token}`, // Ajoute le token dans l'en-tête

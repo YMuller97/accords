@@ -28,7 +28,7 @@ const LoginForm = () => {
     const authenticateUser = async (sanitizedEmail, sanitizedPassword) => {
         try {
             // First try to authenticate as regular user
-            const userResponse = await fetch('api//users/auth', {
+            const userResponse = await fetch('api/users/auth', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ const LoginForm = () => {
             }
             
             // If user authentication failed, try admin authentication
-            const adminResponse = await fetch('api//admin/auth', {
+            const adminResponse = await fetch('api/admin/auth', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -121,7 +121,7 @@ const LoginForm = () => {
     // Function to fetch user profile
     const fetchUserProfile = async (token, userType) => {
         try {
-            const endpoint = userType === 'admin' ? 'api//admin/me' : 'api//users/me'
+            const endpoint = userType === 'admin' ? 'api/admin/me' : 'api/users/me'
             const response = await fetch(endpoint, {
                 headers: {
                     'Authorization' : `Bearer ${token}`

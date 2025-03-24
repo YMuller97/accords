@@ -21,7 +21,7 @@ const VisitedProfile = ({userId}) => {
   // Fetch visitedUser data, instruments, and genres when the component mounts or when userId changes
   useEffect(() => {
     // Fetch visitedUser details by userId
-    fetch('api//users/'+ userId)
+    fetch('api/users/'+ userId)
         .then(response => response.json())
         .then(data => {
             setUser(data);
@@ -29,7 +29,7 @@ const VisitedProfile = ({userId}) => {
         .catch(error => console.error('Erreur:', error));
 
     // Fetch instruments played by the visitedUser
-    fetch('api//users/'+ userId+'/instruments')
+    fetch('api/users/'+ userId+'/instruments')
       .then(response => response.json())
       .then(data => {
           setInstruments(data);
@@ -37,7 +37,7 @@ const VisitedProfile = ({userId}) => {
       .catch(error => console.error('Erreur:', error));
 
     // Fetch preferred genres of the visitedUser
-    fetch('api//users/'+ userId+'/genres')
+    fetch('api/users/'+ userId+'/genres')
       .then(response => response.json())
       .then(data => {
           setGenres(data);
@@ -64,7 +64,7 @@ const VisitedProfile = ({userId}) => {
       // Check if the current user is an admin
       if (isAdmin) {
         // Admin-specific conversation creation logic
-        const checkResponse = await fetch('api//conv/check-admin', {
+        const checkResponse = await fetch('api/conv/check-admin', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ const VisitedProfile = ({userId}) => {
           navigate(`/msg?selected=${checkData.id_conv}`);
         } else {
           // Create a new admin-to-user conversation
-          const response = await fetch('api//conv/admin', {
+          const response = await fetch('api/conv/admin', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -108,7 +108,7 @@ const VisitedProfile = ({userId}) => {
         }
       } else {
         // Regular user conversation creation logic (existing code)
-        const checkResponse = await fetch('api//conv/check', {
+        const checkResponse = await fetch('api/conv/check', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -126,7 +126,7 @@ const VisitedProfile = ({userId}) => {
           navigate(`/msg?selected=${checkData.id_conv}`);
         } else {
           // Create a new user-to-user conversation
-          const response = await fetch('api//conv', {
+          const response = await fetch('api/conv', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ const VisitedProfile = ({userId}) => {
         console.error("No token found. User might not be authenticated.");
         return;
       }
-      const response = await fetch('api//reports', {
+      const response = await fetch('api/reports', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
