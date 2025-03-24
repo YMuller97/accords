@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     env_file: .env
     ports: 
-      - ${SERVER_PORT}:3001
+      - 127.0.0.1:${SERVER_PORT}:3001
     networks: 
       - node-network
     volumes:
@@ -25,7 +25,7 @@ services:
       dockerfile: Dockerfile
     env_file: .env
     ports: 
-      - ${FRONT_PORT}:3000
+      - 127.0.0.1:${FRONT_PORT}:3000
     networks: 
       - node-network
     volumes:
