@@ -32,7 +32,7 @@ const ReportDetails = ({ report, onResolve }) => {
     if (!token) {
       throw new Error("No token");
     }
-    const response = await fetch(`http://localhost:3001/users/${userId}`, {
+    const response = await fetch(`api//users/${userId}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const ReportDetails = ({ report, onResolve }) => {
   const handleResolve = async () => {
     try {
       const token = localStorage.getItem("authToken");
-      const response = await fetch(`http://localhost:3001/reports/resolve/${report.id_report}`, {
+      const response = await fetch(`api//reports/resolve/${report.id_report}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

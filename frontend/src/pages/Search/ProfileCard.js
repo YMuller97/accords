@@ -35,7 +35,7 @@ const ProfileCard = ({user, favState}) => {
         <div className={classes['profile-card']}>
             <Link to={`/profil/${user.id_user}`}>
                 <div className={classes['card-picture']}>
-                    <img src={`http://localhost:3001${user.picture_user}`}
+                    <img src={`api/${user.picture_user}`}
                     alt="Profile"/>
                 </div>
             </Link>
