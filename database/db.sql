@@ -174,37 +174,37 @@ INSERT INTO levels (id_level, label_level) VALUES
 -- Insertion des utilisateurs
 INSERT INTO users (id_user, name_user, first_name_user, alias_user, birth_date_user, email_user, password_user, postal_code_user, location_user, description_user, picture_user) VALUES
 -- pass 1234biere
-('1', 'Robert', 'Bob', 'L''âne', '1974', 'bob.dit.lane@wanadoo.fr', '$2b$10$L0uU5zf3Vz1CYRtWDQKxy..7bBsSrYkknXSrNH/bRyeNmHVO6DrIK', '88230', 'Xonrardmer', 'Je joue du triangle le vendredi soir au bistrot avec les copains, j''ai le rythme dans la peau. J''aimerais pratiquer avec d''autres gens.', '/uploads/1742373840917-Bob Robert.png'),
+('1', 'Robert', 'Bob', 'L''âne', '1974', 'bob.dit.lane@wanadoo.fr', '$2b$10$L0uU5zf3Vz1CYRtWDQKxy..7bBsSrYkknXSrNH/bRyeNmHVO6DrIK', '88230', 'Xonrardmer', 'Je joue du triangle le vendredi soir au bistrot avec les copains, j''ai le rythme dans la peau. J''aimerais pratiquer avec d''autres gens.', 'uploads/1742373840917-Bob Robert.png'),
 -- pass piano2023
-('2', 'Dupont', 'Marie', 'Mélodie', '1988', 'marie.melodie@gmail.com', '$2b$10$qktUIAsdVyAJ8l3EQ/sDqOK7j8g0YNYeoCSEMb.8Gv.SQM3c96wee', '75011', 'Paris', 'Pianiste passionnée cherchant à former un groupe de jazz.', '/uploads/1742373891419-Marie Dupont.png'),
+('2', 'Dupont', 'Marie', 'Mélodie', '1988', 'marie.melodie@gmail.com', '$2b$10$qktUIAsdVyAJ8l3EQ/sDqOK7j8g0YNYeoCSEMb.8Gv.SQM3c96wee', '75011', 'Paris', 'Pianiste passionnée cherchant à former un groupe de jazz.', 'uploads/1742373891419-Marie Dupont.png'),
 -- pass guitar123
-('3', 'Martin', 'Luc', 'Rockstar', '1995', 'luc.rockstar@hotmail.com', '$2b$10$kJQAj0bt8kFeg.66Vui4ZeadsUQ9vbhYewftRpTZcbF1cXVysO5zS', '69001', 'Lyon', 'Guitariste débutant cherchant des personnes pour jouer du rock.', '/uploads/1742373962211-Luc Martin.png'),
+('3', 'Martin', 'Luc', 'Rockstar', '1995', 'luc.rockstar@hotmail.com', '$2b$10$kJQAj0bt8kFeg.66Vui4ZeadsUQ9vbhYewftRpTZcbF1cXVysO5zS', '69001', 'Lyon', 'Guitariste débutant cherchant des personnes pour jouer du rock.', 'uploads/1742373962211-Luc Martin.png'),
 -- pass saxo4ever
-('4', 'Leroy', 'Sophie', 'Sax Girl', '1982', 'sophie.sax@yahoo.fr', '$2b$10$j7PNo7E.kZGxzvq3ctXKMOcR9P0awn44ryrNjOgfgITHptVLqcb5C', '33000', 'Bordeaux', 'Saxophoniste de niveau intermédiaire, intéressée par le jazz et le funk.', '/uploads/1742374024187-Sophie Leroy.png'),
+('4', 'Leroy', 'Sophie', 'Sax Girl', '1982', 'sophie.sax@yahoo.fr', '$2b$10$j7PNo7E.kZGxzvq3ctXKMOcR9P0awn44ryrNjOgfgITHptVLqcb5C', '33000', 'Bordeaux', 'Saxophoniste de niveau intermédiaire, intéressée par le jazz et le funk.', 'uploads/1742374024187-Sophie Leroy.png'),
 -- pass batterie90
-('5', 'Petit', 'Thomas', 'Drum Master', '1990', 'thomas.drums@gmail.com', '$2b$10$OtaB/WdSpi1fRrOA4rMlE.u4nkeXCnCvxOSYdh4nnefpziUCru.ei', '59000', 'Lille', 'Batteur expérimenté cherchant à intégrer un groupe de metal.', '/uploads/1742374048951-Thomas Petit.png'),
+('5', 'Petit', 'Thomas', 'Drum Master', '1990', 'thomas.drums@gmail.com', '$2b$10$OtaB/WdSpi1fRrOA4rMlE.u4nkeXCnCvxOSYdh4nnefpziUCru.ei', '59000', 'Lille', 'Batteur expérimenté cherchant à intégrer un groupe de metal.', 'uploads/1742374048951-Thomas Petit.png'),
 -- pass violon85
-('6', 'Dubois', 'Claire', 'Violoniste', '1985', 'claire.violon@orange.fr', '$2b$10$3K2JPggippsfERBf2tJjAeEVjGbkn0g7q4yYOsJuYRps.EBb1Zcre', '31000', 'Toulouse', 'Violoniste classique ouverte à d''autres styles musicaux.', '/uploads/1742374072972-Claire Dubois.png'),
+('6', 'Dubois', 'Claire', 'Violoniste', '1985', 'claire.violon@orange.fr', '$2b$10$3K2JPggippsfERBf2tJjAeEVjGbkn0g7q4yYOsJuYRps.EBb1Zcre', '31000', 'Toulouse', 'Violoniste classique ouverte à d''autres styles musicaux.', 'uploads/1742374072972-Claire Dubois.png'),
 -- pass trumpet78
-('7', 'Moreau', 'Pierre', 'Trompettiste', '2002', 'pierre.trompette@gmail.com', '$2b$10$X.cCiTE/PJ55.09nRBTm7O4EqY8BsEDU6k3rVDz7TpOL9dBD/m/jW', '44000', 'Nantes', 'Trompettiste de jazz cherchant à former un big band.', '/uploads/1742374094650-Pierre Moreau.png'),
+('7', 'Moreau', 'Pierre', 'Trompettiste', '2002', 'pierre.trompette@gmail.com', '$2b$10$X.cCiTE/PJ55.09nRBTm7O4EqY8BsEDU6k3rVDz7TpOL9dBD/m/jW', '44000', 'Nantes', 'Trompettiste de jazz cherchant à former un big band.', 'uploads/1742374094650-Pierre Moreau.png'),
 -- pass accordion92
-('8', 'Lefebvre', 'Julie', 'Accordéoniste', '1992', 'julie.accordeon@yahoo.com', '$2b$10$Tivg6WmzWSRjYxXwB.nyn.Q9jRPcJKmlRfzlcLD39g1k45Lzrdvgi', '67000', 'Strasbourg', 'Accordéoniste passionnée de musique traditionnelle.', '/uploads/1742374113021-Julie Lefebvre.png'),
+('8', 'Lefebvre', 'Julie', 'Accordéoniste', '1992', 'julie.accordeon@yahoo.com', '$2b$10$Tivg6WmzWSRjYxXwB.nyn.Q9jRPcJKmlRfzlcLD39g1k45Lzrdvgi', '67000', 'Strasbourg', 'Accordéoniste passionnée de musique traditionnelle.', 'uploads/1742374113021-Julie Lefebvre.png'),
 -- pass bass1987
-('9', 'Garcia', 'Antoine', 'Contrebassiste', '1987', 'antoine.contrebasse@hotmail.fr', '$2b$10$5L2EE2gWi41fVWFE2XYSA.jrXA8Qn1qRDgXeXp0K94OSbLe2Vaq2C', '13001', 'Marseille', 'Contrebassiste de jazz cherchant des musiciens pour des jam sessions.', '/uploads/1742374134054-Antoine Garcia.png'),
+('9', 'Garcia', 'Antoine', 'Contrebassiste', '1987', 'antoine.contrebasse@hotmail.fr', '$2b$10$5L2EE2gWi41fVWFE2XYSA.jrXA8Qn1qRDgXeXp0K94OSbLe2Vaq2C', '13001', 'Marseille', 'Contrebassiste de jazz cherchant des musiciens pour des jam sessions.', 'uploads/1742374134054-Antoine Garcia.png'),
 -- pass harpe2023
-('10', 'Roux', 'Émilie', 'Harpiste', '1983', 'emilie.harpe@gmail.com', '$2b$10$mCzcVyfzqD4fcRmYeraJAer4jk21rv1xP/AWTOHINl6FeJgUXiPbW', '35000', 'Rennes', 'Harpiste classique intéressée par la musique celtique.', '/uploads/1742374159636-Emilmie Roux.png'),
+('10', 'Roux', 'Émilie', 'Harpiste', '1983', 'emilie.harpe@gmail.com', '$2b$10$mCzcVyfzqD4fcRmYeraJAer4jk21rv1xP/AWTOHINl6FeJgUXiPbW', '35000', 'Rennes', 'Harpiste classique intéressée par la musique celtique.', 'uploads/1742374159636-Emilmie Roux.png'),
 -- pass clarinet80
-('11', 'Fournier', 'Nicolas', 'Clarinettiste', '1980', 'nicolas.clarinette@orange.fr', '$2b$10$7v/9RtAwEbjowtZV/v25lOwSaeeIgzxtU14YGH.pz7hEjCWabAnke', '21000', 'Dijon', 'Clarinettiste amateur cherchant à jouer dans un orchestre.', '/uploads/1742374182587-Nicolas Fournier.png'),
+('11', 'Fournier', 'Nicolas', 'Clarinettiste', '1980', 'nicolas.clarinette@orange.fr', '$2b$10$7v/9RtAwEbjowtZV/v25lOwSaeeIgzxtU14YGH.pz7hEjCWabAnke', '21000', 'Dijon', 'Clarinettiste amateur cherchant à jouer dans un orchestre.', 'uploads/1742374182587-Nicolas Fournier.png'),
 -- pass xylo1993
-('12', 'Girard', 'Céline', 'Xylophone', '1993', 'celine.xylo@gmail.com', '$2b$10$86y9efIZJJUtDLmTzXJ6mOBdE/rul0TXGmyunsAUmwG1Jmagt0eFu', '54000', 'Nancy', 'Percussionniste spécialisée en xylophone, ouverte à tous styles.', '/uploads/1742374203882-Celine Girard.png'),
+('12', 'Girard', 'Céline', 'Xylophone', '1993', 'celine.xylo@gmail.com', '$2b$10$86y9efIZJJUtDLmTzXJ6mOBdE/rul0TXGmyunsAUmwG1Jmagt0eFu', '54000', 'Nancy', 'Percussionniste spécialisée en xylophone, ouverte à tous styles.', 'uploads/1742374203882-Celine Girard.png'),
 -- pass trombone89
-('13', 'Morel', 'Julien', 'Trombone', '2005', 'julien.trombone@yahoo.fr', '$2b$10$AXNpt3BtSk6Hho9czb/eD.2eHjYyo8mcPvk/OR3dAn8q8p1W5X5bS', '76000', 'Rouen', 'Tromboniste cherchant à intégrer un orchestre symphonique.', '/uploads/1742374228044-Julien Morel.png'),
+('13', 'Morel', 'Julien', 'Trombone', '2005', 'julien.trombone@yahoo.fr', '$2b$10$AXNpt3BtSk6Hho9czb/eD.2eHjYyo8mcPvk/OR3dAn8q8p1W5X5bS', '76000', 'Rouen', 'Tromboniste cherchant à intégrer un orchestre symphonique.', 'uploads/1742374228044-Julien Morel.png'),
 -- pass banjo2023
-('14', 'Lambert', 'Aurélie', 'Banjo', '1991', 'aurelie.banjo@hotmail.com', '$2b$10$.l2f2Bp7P4nujVBRPbw4wupD./f90fcRfA58T.JP5Xujm8GHTLHuK', '38000', 'Grenoble', 'Joueuse de banjo passionnée de bluegrass et de country.', '/uploads/1742374249890-Aurelie Lambert.png'),
+('14', 'Lambert', 'Aurélie', 'Banjo', '1991', 'aurelie.banjo@hotmail.com', '$2b$10$.l2f2Bp7P4nujVBRPbw4wupD./f90fcRfA58T.JP5Xujm8GHTLHuK', '38000', 'Grenoble', 'Joueuse de banjo passionnée de bluegrass et de country.', 'uploads/1742374249890-Aurelie Lambert.png'),
 -- pass cello1986
-('15', 'Faure', 'Maxime', 'Violoncelliste', '1986', 'maxime.violoncelle@gmail.com', '$2b$10$0WuL0WTsvNi2vy2T2dJ6f.zAYSZacJYKodCtk4r6XvU6p0Qqe4yaC', '34000', 'Montpellier', 'Violoncelliste professionnel cherchant à former un quatuor à cordes.', '/uploads/1742374270466-Maxime Faure.png'),
+('15', 'Faure', 'Maxime', 'Violoncelliste', '1986', 'maxime.violoncelle@gmail.com', '$2b$10$0WuL0WTsvNi2vy2T2dJ6f.zAYSZacJYKodCtk4r6XvU6p0Qqe4yaC', '34000', 'Montpellier', 'Violoncelliste professionnel cherchant à former un quatuor à cordes.', 'uploads/1742374270466-Maxime Faure.png'),
 -- pass flute2023
-('16', 'Mercier', 'Camille', 'Flûtiste', '1994', 'camille.flute@orange.fr', '$2b$10$eIQygqTh4mhJv5Uf3jExOORwOpi0xjBwuaDYnc/2DYLsxtT5Wi8B.', '49000', 'Angers', 'Flûtiste traversière cherchant à explorer la musique contemporaine.', '/uploads/1742374290884-Camille Mercier.png');
+('16', 'Mercier', 'Camille', 'Flûtiste', '1994', 'camille.flute@orange.fr', '$2b$10$eIQygqTh4mhJv5Uf3jExOORwOpi0xjBwuaDYnc/2DYLsxtT5Wi8B.', '49000', 'Angers', 'Flûtiste traversière cherchant à explorer la musique contemporaine.', 'uploads/1742374290884-Camille Mercier.png');
 
 -- Insertion des localisations
 INSERT INTO locations (id_location, postal_code, latitude, longitude) VALUES

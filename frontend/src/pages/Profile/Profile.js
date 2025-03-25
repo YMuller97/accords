@@ -20,7 +20,7 @@ const Profile = () => {
     // if (!userId) return; // Évite d'exécuter si userId est undefined
 
     fetch(
-      `http://localhost:3001/users/${user.dataValues.id_user}/instruments`
+      `${process.env.REACT_APP_API_ROUTE}users/${user.dataValues.id_user}/instruments`
     )
       .then((response) => response.json())
       .then((instruments) => {
@@ -29,7 +29,7 @@ const Profile = () => {
       })
       .catch((error) => console.error("Erreur:", error));
 
-    fetch(`http://localhost:3001/users/${user.dataValues.id_user}/genres`)
+    fetch(`${process.env.REACT_APP_API_ROUTE}users/${user.dataValues.id_user}/genres`)
       .then((response) => response.json())
       .then((genres) => {
         // console.log(genres);
@@ -51,7 +51,7 @@ const Profile = () => {
           <div className={`${classes.containerIdCard} ${classes.profilImage}`}>
             <div className={classes.box}>
               <img
-                src={`http://localhost:3001${user.dataValues.picture_user}`}
+                src={`${process.env.REACT_APP_API_ROUTE}${user.dataValues.picture_user}`}
                 alt="Profil"
                 className={classes.box}
               />

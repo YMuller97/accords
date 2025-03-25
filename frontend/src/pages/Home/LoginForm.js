@@ -28,7 +28,7 @@ const LoginForm = () => {
     const authenticateUser = async (sanitizedEmail, sanitizedPassword) => {
         try {
             // First try to authenticate as regular user
-            const userResponse = await fetch('http://localhost:3001/users/auth', {
+            const userResponse = await fetch(process.env.REACT_APP_API_ROUTE+ 'users/auth', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ const LoginForm = () => {
             }
             
             // If user authentication failed, try admin authentication
-            const adminResponse = await fetch('http://localhost:3001/admin/auth', {
+            const adminResponse = await fetch(process.env.REACT_APP_API_ROUTE +'admin/auth', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -121,7 +121,7 @@ const LoginForm = () => {
     // Function to fetch user profile
     const fetchUserProfile = async (token, userType) => {
         try {
-            const endpoint = userType === 'admin' ? 'http://localhost:3001/admin/me' : 'http://localhost:3001/users/me'
+            const endpoint = userType === 'admin' ? process.env.REACT_APP_API_ROUTE+ 'admin/me' : process.env.REACT_APP_API_ROUTE+ 'users/me'
             const response = await fetch(endpoint, {
                 headers: {
                     'Authorization' : `Bearer ${token}`

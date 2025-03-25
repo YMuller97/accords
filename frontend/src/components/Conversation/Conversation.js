@@ -31,10 +31,10 @@ const Conversation = () => {
       let endpoint = '';
       if (isAdmin && admin) {
         // Fetch admin conversations
-        endpoint = `http://localhost:3001/conv/admin/${admin.dataValues.id_admin}`;
+        endpoint = `${process.env.REACT_APP_API_ROUTE}conv/admin/${admin.dataValues.id_admin}`;
       } else if (user) {
         // Fetch regular user conversations
-        endpoint = `http://localhost:3001/conv/user/${user.dataValues.id_user}`;
+        endpoint = `${process.env.REACT_APP_API_ROUTE}conv/user/${user.dataValues.id_user}`;
       }
       const response = await fetch(
         endpoint,
@@ -63,7 +63,7 @@ const Conversation = () => {
       try {
         const token = localStorage.getItem("authToken");
         const response = await fetch(
-          `http://localhost:3001/reports/unresolved`,
+          `${process.env.REACT_APP_API_ROUTE}reports/unresolved`,
           {
             method: "GET",
             headers: {
@@ -106,7 +106,7 @@ const Conversation = () => {
         return;
       }
       const response = await fetch(
-        `http://localhost:3001/conv/${selectedConversation.id_conv}`,
+        `${process.env.REACT_APP_API_ROUTE}conv/${selectedConversation.id_conv}`,
         {
           method: "PUT",
           headers: {
@@ -145,7 +145,7 @@ const Conversation = () => {
         return;
       }
 
-      const response = await fetch('http://localhost:3001/conv/admin', {
+      const response = await fetch(process.env.REACT_APP_API_ROUTE+ 'conv/admin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -273,7 +273,7 @@ const Conversation = () => {
                 className={`${classes["profile-button"]} ${selectedConversation && selectedConversation.id_conv === conv.id_conv ? classes["selected"] : ""}`}
                 onClick={() => handleConversationSelect(conv)}
               >
-                <img src={otherParticipant.role === 'admin' ? attentionPic:`http://localhost:3001${otherUserPicture}`} className={classes.picture} alt="user"></img>
+                <img src={otherParticipant.role === 'admin' ? attentionPic:`${process.env.REACT_APP_API_ROUTE}${otherUserPicture}`} className={classes.picture} alt="user"></img>
                 <p>{otherUserName}</p>
               </div>
             );
